@@ -11,7 +11,7 @@ const App = () => {
     };
 
     fetch(
-      "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&key=AIzaSyBWHiRMxAh8vgSukgZejqL9xMofElkIyLY",
+      "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=24&key=AIzaSyBWHiRMxAh8vgSukgZejqL9xMofElkIyLY",
       requestOptions
     )
       .then(response => response.json())
