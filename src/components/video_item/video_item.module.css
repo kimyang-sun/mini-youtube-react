@@ -8,6 +8,7 @@
   height: 100%;
   border: 1px solid #ddd;
   cursor: pointer;
+  background-color: #fff;
   transition: background-color 0.5s;
 }
 

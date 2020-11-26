@@ -44,8 +44,15 @@ a {
 
 button {
   cursor: pointer;
+  background-color: transparent;
+  appearance: none;
+  border: none;
 }
 
 * {
   box-sizing: border-box;
+}
+
+#root {
+  position: relative;
 }
