@@ -17,7 +17,7 @@ const SearchHeader = ({ onSearch }) => {
   };
   return (
     <header className={styles.header}>
-      <a href="/index.html" className={styles.logo}>
+      <a href="/" className={styles.logo}>
         <img src="/images/logo.png" alt="logo" />
         <h1 className={styles.title}>
           Youtube<span>mini</span>
