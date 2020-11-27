@@ -1,5 +1,5 @@
 import styles from "./app.module.css";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import SearchHeader from "./components/serarch_header/search_header";
 import VideoList from "./components/video_list/video_list";
 import VideoDetail from "./components/video_detail/video_detail";
@@ -13,14 +13,20 @@ const App = ({ youtube }) => {
       .mostPopular()
       .then(items => setVideos(items))
       .catch(error => console.log("error", error));
-  }, []);
+  }, [youtube]);
 
-  const onSearch = query => {
-    youtube
-      .search(query)
-      .then(items => setVideos(items))
-      .catch(error => console.log("error", error));
-  };
+  const onSearch = useCallback(
+    query => {
+      youtube
+        .search(query)
+        .then(items => {
+          setVideos(items);
+          setSelectedVideo(null);
+        })
+        .catch(error => console.log("error", error));
+    },
+    [youtube]
+  );
 
   const onVideoClick = video => {
     setSelectedVideo(video);

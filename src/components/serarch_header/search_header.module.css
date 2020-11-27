@@ -18,13 +18,13 @@
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   margin-left: 6px;
 }
 
 .title > span {
   display: inline-block;
-  font-size: 0.875rem;
+  font-size: 0.625em;
   vertical-align: top;
   background-color: #ff0000;
   padding: 0 5px;

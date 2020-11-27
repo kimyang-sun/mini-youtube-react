@@ -26,8 +26,7 @@
 
 @media (max-width: 1024px) {
   .container {
-    flex-direction: column;
-    justify-content: flex-start;
+    display: block;
   }
 
   .detail {
