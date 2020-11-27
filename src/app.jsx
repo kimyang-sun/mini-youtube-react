@@ -1,10 +1,13 @@
-import "./app.css";
+import styles from "./app.module.css";
 import React, { useEffect, useState } from "react";
 import SearchHeader from "./components/serarch_header/search_header";
 import VideoList from "./components/video_list/video_list";
+import VideoDetail from "./components/video_detail/video_detail";
 
 const App = ({ youtube }) => {
   const [videos, setVideos] = useState([]);
+  const [selectedVideo, setSelectedVideo] = useState(null);
+
   useEffect(() => {
     youtube
       .mostPopular()
@@ -19,10 +22,27 @@ const App = ({ youtube }) => {
       .catch(error => console.log("error", error));
   };
 
+  const onVideoClick = video => {
+    setSelectedVideo(video);
+  };
+
   return (
     <React.Fragment>
       <SearchHeader onSearch={onSearch}></SearchHeader>
-      <VideoList videos={videos}></VideoList>
+      <section className={styles.container}>
+        {selectedVideo && (
+          <div className={styles.detail}>
+            <VideoDetail video={selectedVideo}></VideoDetail>
+          </div>
+        )}
+        <div className={selectedVideo ? styles.list : styles.grid}>
+          <VideoList
+            videos={videos}
+            onVideoClick={onVideoClick}
+            display={selectedVideo ? "list" : "grid"}
+          ></VideoList>
+        </div>
+      </section>
     </React.Fragment>
   );
 };

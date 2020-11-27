@@ -7,14 +7,17 @@ const SearchHeader = ({ onSearch }) => {
     const value = inputRef.current.value;
     onSearch(value);
   };
+
   const onClick = () => {
     handleSearch();
   };
+
   const onKeyPress = event => {
     if (event.key === "Enter") {
       handleSearch();
     }
   };
+
   return (
     <header className={styles.header}>
       <a href="/" className={styles.logo}>
