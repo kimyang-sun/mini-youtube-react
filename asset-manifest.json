@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.d6add19d.chunk.css",
-    "main.js": "/static/js/main.f988a866.chunk.js",
-    "main.js.map": "/static/js/main.f988a866.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.fc4fb1e2.js",
-    "runtime-main.js.map": "/static/js/runtime-main.fc4fb1e2.js.map",
-    "static/js/2.fb5521b4.chunk.js": "/static/js/2.fb5521b4.chunk.js",
-    "static/js/2.fb5521b4.chunk.js.map": "/static/js/2.fb5521b4.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.d6add19d.chunk.css.map": "/static/css/main.d6add19d.chunk.css.map",
-    "static/js/2.fb5521b4.chunk.js.LICENSE.txt": "/static/js/2.fb5521b4.chunk.js.LICENSE.txt"
+    "main.css": "/mini-youtube-react/static/css/main.d6add19d.chunk.css",
+    "main.js": "/mini-youtube-react/static/js/main.f988a866.chunk.js",
+    "main.js.map": "/mini-youtube-react/static/js/main.f988a866.chunk.js.map",
+    "runtime-main.js": "/mini-youtube-react/static/js/runtime-main.fb2ad5af.js",
+    "runtime-main.js.map": "/mini-youtube-react/static/js/runtime-main.fb2ad5af.js.map",
+    "static/js/2.fb5521b4.chunk.js": "/mini-youtube-react/static/js/2.fb5521b4.chunk.js",
+    "static/js/2.fb5521b4.chunk.js.map": "/mini-youtube-react/static/js/2.fb5521b4.chunk.js.map",
+    "index.html": "/mini-youtube-react/index.html",
+    "static/css/main.d6add19d.chunk.css.map": "/mini-youtube-react/static/css/main.d6add19d.chunk.css.map",
+    "static/js/2.fb5521b4.chunk.js.LICENSE.txt": "/mini-youtube-react/static/js/2.fb5521b4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fc4fb1e2.js",
+    "static/js/runtime-main.fb2ad5af.js",
     "static/js/2.fb5521b4.chunk.js",
     "static/css/main.d6add19d.chunk.css",
     "static/js/main.f988a866.chunk.js"
