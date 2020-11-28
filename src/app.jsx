@@ -36,10 +36,13 @@ const App = ({ youtube }) => {
     [youtube]
   );
 
-  const onVideoClick = video => {
-    setSelectedVideo(video);
-    window.scrollTo(0, 0);
-  };
+  const onVideoClick = useCallback(
+    video => {
+      setSelectedVideo(video);
+      window.scrollTo(0, 0);
+    },
+    [youtube]
+  );
 
   return (
     <React.Fragment>
