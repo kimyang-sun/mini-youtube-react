@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Mini Youtube App (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://user-images.githubusercontent.com/56675004/100516164-5471e200-31c5-11eb-8a1b-b9ed7813ba79.png)
 
-## Available Scripts
+![image](https://user-images.githubusercontent.com/56675004/100516182-79feeb80-31c5-11eb-8c4c-970724698841.png)
 
-In the project directory, you can run:
+![image](https://user-images.githubusercontent.com/56675004/100516200-a0bd2200-31c5-11eb-9ea5-9a56bf8983b8.png)
 
-### `yarn start`
+![image](https://user-images.githubusercontent.com/56675004/100516214-b599b580-31c5-11eb-83a9-0a65d4823dcc.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### 📌
 
-### `yarn test`
+```
+- React.js
+- Youtube Data APIs
+- Axios
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+## 링크
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [https://kimyang-sun.github.io/mini-youtube-react/](https://kimyang-sun.github.io/mini-youtube-react/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 기능 설명
 
-### `yarn eject`
+### [동영상 시청 기능]
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- 동영상을 클릭하여 시청할 수 있습니다.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+- 첫 페이지는 인기 동영상을 모아놓은 목록이 나옵니다
+- 클릭하여 시청 가능합니다
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### [검색 기능]
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- 검색창에 보고 싶은 영상을 검색할 수 있습니다.
 
-## Learn More
+```
+- 검색창에 검색어를 입력 후 Enter 또는 🔍 아이콘 클릭합니다
+- 해당하는 목록이 나오면 클릭하여 시청합니다
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### [모바일 반응형]
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 모바일 반응형 CSS를 구현하였습니다.
