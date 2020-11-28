@@ -2,8 +2,9 @@ import React, { memo } from "react";
 import styles from "./video_item.module.css";
 
 const VideoItem = memo(
-  ({ video, video: { snippet }, onVideoClick, display }) => {
-    const displayType = display === "list" ? styles.list : styles.grid;
+  ({ video, video: { snippet }, onVideoClick, selectedVideo }) => {
+    const displayType = selectedVideo ? styles.list : styles.grid;
+    const selectedId = selectedVideo && selectedVideo.id;
     return (
       <li
         className={`${styles.video} ${displayType}`}
@@ -11,7 +12,11 @@ const VideoItem = memo(
           onVideoClick(video);
         }}
       >
-        <div className={styles.box}>
+        <div
+          className={`${styles.box} ${
+            selectedId === video.id && styles.selected
+          }`}
+        >
           <div className={styles.thumbnail}>
             <img src={snippet.thumbnails.medium.url} alt="video thumbnail" />
           </div>

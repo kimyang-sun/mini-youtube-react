@@ -41,6 +41,14 @@
   transform: scale(1.05);
 }
 
+.box.selected {
+  background-color: rgb(255, 231, 234);
+}
+
+.box-notSelected {
+  border-color: #ddd;
+}
+
 .thumbnail {
   overflow: hidden;
 }

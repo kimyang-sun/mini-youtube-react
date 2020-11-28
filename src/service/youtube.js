@@ -20,7 +20,7 @@ class Youtube {
         part: "snippet",
         q: query,
         type: "video",
-        maxResult: "24",
+        maxResults: "24",
       },
     });
     return response.data.items.map(item => ({ ...item, id: item.id.videoId }));
